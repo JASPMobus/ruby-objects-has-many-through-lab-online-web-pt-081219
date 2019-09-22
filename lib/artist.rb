@@ -16,8 +16,6 @@ class Artist
   end
   
   def new_song(name, genre)
-    genre.artists.push(self)
-    
     self.songs.push(Song.new(name, self, genre))
   end
 end
