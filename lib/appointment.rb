@@ -9,6 +9,7 @@ class Appointment
     @doctor = doctor
     
     doctor.patients << patient
+    doctor.appointments << self.
     
     patient.doctors << doctor
     patient.appointments << self
