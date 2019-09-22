@@ -9,4 +9,5 @@ class Artist
     @genres = []
     
     @@all << self 
+  end
 end
