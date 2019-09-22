@@ -12,6 +12,8 @@ class Appointment
     
     patient.doctors << doctor
     patient.appointments << self
+    
+    @@all << self
   end
   
   def self.all 
