@@ -11,6 +11,8 @@ class Song
     artist.genres.push(genre)
     artist.songs.push(self)
     
+    genre.songs << self
+    
     @@all << self
   end
   
