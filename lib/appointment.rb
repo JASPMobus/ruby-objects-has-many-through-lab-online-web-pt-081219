@@ -9,6 +9,7 @@ class Appointment
     @doctor = doctor
     
     doctor.appointments << self
+    doctor.patients << patient
   end
   
   def self.all 
