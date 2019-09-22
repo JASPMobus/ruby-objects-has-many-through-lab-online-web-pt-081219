@@ -9,6 +9,7 @@ class Song
     @genre = genre
     
     artist.genres.push(genre)
+    artist.songs.push(self)
     
     @@all << self
   end
